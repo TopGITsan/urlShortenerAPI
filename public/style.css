@@ -1,59 +1,70 @@
 /****** Main Styling ******/
 
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #222;
-	background-color: #FaFaFa;
-	text-align: center;
-	line-height: 1.4em;
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  text-align: center;
+  background-color: black;
+  color: #fff;
 }
 
-.container {
-	padding: 0;
-	margin-top: 40px;
+h1 {
+  font-style: italic;
 }
 
-h3 {
-  margin-top: 30px;
+.bold {
+  font-weight: bold;
 }
 
-.footer {
-	margin-top: 40px;
+.center {
+  text-align: center;
 }
 
-.user-stories {
-  position: relative;
-  text-align: justify;
-  max-width: 700px;
-  margin: 15px auto;
+main {
+  margin: 10px auto;
+  border-left: 1px dotted red;
+  max-width: 800px;
+  text-align: left;
+  padding: 10px 20px;
 }
+
+p,h3,ul {
+  padding: 10px;
+}
+
+ol li {
+  list-style-type:none;
+  margin: 10px 0;
+}
+
 code {
-  font-family: monospace;
-  padding: 2px;
-  color: black;
-  background-color: #fff;
-}
-ol {
-	list-style-position: inside;
-}
-ul {
-	list-style-type: none;
+  background-color: green;
 }
 
-li {
-  margin-bottom: 0.5em;
-}
-.user-stories li {
-  margin-bottom: 1em;
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
 }
 
-a {
-	color: #2574A9;
+a{
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 form {
-  border: solid 1px black;
+  border: solid 1px white;
   border-radius: 5px;
   margin: 10px auto;
   padding: 20px;
@@ -68,7 +79,16 @@ input {
   padding: 5px;
 }
 
-input[type=text] {
-  width: 220px;
+input[type=url] {
+  width: 250px;
   text-align: center;
+}
+
+input[type=submit] {
+  margin: 0 20px;
+  font-size: 2.5em;
+}
+
+input[type=submit]:hover {
+  color:green;
 }
