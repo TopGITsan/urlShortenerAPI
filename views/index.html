@@ -2,47 +2,61 @@
 
 <html>
 
-   <head>
-      <title>URL Shortener</title>
-      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-      <link href="/public/style.css" rel="stylesheet" type="text/css">
-   </head>
+<head>
+  <title>URL Shortener</title>
+  <link rel="shortcut icon"
+    href="https://cdn.glitch.com/ab7716bd-ed89-4d09-9f83-99824cf57a6b%2Ffullsizeoutput_e.jpeg?1553276458538"
+    type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <link href="/public/style.css" rel="stylesheet" type="text/css">
+</head>
 
-   <body>
-      <div class="container">
-        <h2>API Project: URL Shortener Microservice</h2>
-        <h3>User Story: </h3>
-        <ol>
-          <li>I can POST a URL to <code>[project_url]/api/shorturl/new</code> and I will receive a shortened URL in the JSON response.<br>Example : <code>{"original_url":"www.google.com","short_url":1}</code></li>
-          <li>If I pass an invalid URL that doesn't follow the <code>http(s)://www.example.com(/more/routes)</code> format, the JSON response will contain an error like <code>{"error":"invalid URL"}</code><br>
-          HINT: to be sure that the submitted url points to a valid site you can use the function <code>dns.lookup(host, cb)</code> from the <code>dns</code> core module.</li>
-          <li>When I visit the shortened URL, it will redirect me to my original link.</li>
-        </ol>
-        
-        <h3>Short URL Creation </h3>
-        <p>
-          example: <code>POST [project_url]/api/shorturl/new</code> - <code>https://www.google.com</code>
-        </p>
-        <form action="api/shorturl/new" method="POST">
-          <label for="url_input">URL to be shortened</label>
-          <input id="url_input" type="text" name="url" value="https://www.freecodecamp.org">
-          <input type="submit" value="POST URL">
-        </form>
-        <h3>Example Usage:</h3>
-        <a href="https://thread-paper.glitch.me/api/shorturl/3">
-          [this_project_url]/api/shorturl/3
-        </a>
+<body>
+  <header>
+    <h1>API Project: URL Shortener Microservice</h1>
+  </header>
+  <main class="container">
 
-        <h3>Will Redirect to:</h3>
-        <p>https://www.freecodecamp.org/forum/</p>
-      </div>
-      <div class="footer">
-        <p>
-          by <a href="https://www.freecodecamp.org">freeCodeCamp</a>
-        </p>
-      </div>
-   </body>
+    <h3>User Story: </h3>
+    <ol>
+      <li>I can POST a URL to <code>[project_url]/api/shorturl/new</code> and I will receive a shortened URL in the JSON
+        response.<br>Example : <code>{"original_url":"www.google.com","short_url":1}</code></li>
+      <li>If I pass an invalid URL that doesn't follow the <code>http(s)://www.example.com(/more/routes)</code> format,
+        the JSON response will contain an error like <code>{"error":"invalid URL"}</code><br>
+        <!--           HINT: to be sure that the submitted url points to a valid site you can use the function <code>dns.lookup(host, cb)</code> from the <code>dns</code> core module. -->
+      </li>
+      <li>When I visit the shortened URL, it will redirect me to my original link.</li>
+    </ol>
+
+    <h3>Short URL Creation </h3>
+    <p>
+      example: <code>POST [project_url]/api/shorturl/new</code> - <code>https://www.google.com</code>
+    </p>
+    <form action="api/shorturl/new" method="POST">
+      <label for="url_input">URL to be shortened</label>
+      <input id="url_input" type="url" name="url" placeholder="https://www.freecodecamp.org" title="Include http(s)://"
+        required
+        pattern="^(https?:\/\/)?([a-zA-Z0-9]{2,}([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z-9\-\#]{2,}$">
+      <input type="submit" value="POST URL">
+    </form>
+    <div class="center">
+      <h3>Example Usage:</h3>
+      <a href="https://top-url-shortener.glitch.me/api/shorturl/top.short.2">
+        [this_project_url]/api/shorturl/top.short.2
+      </a>
+
+      <h3>Will Redirect to:</h3>
+      <p>https://www.freecodecamp.org/forum/</p>
+    </div>
+  </main>
+  <footer>
+    <p>Made with <a href="https://glitch.com/@TopGITsan">Glitch</a>!</p>
+    <p>
+      <a href="http://www.freecodecamp.com">freeCodeCamp</a> | <a href="http://www.freecodecamp.com/top">Click here to
+        view author's profile</a>
+    </p>
+  </footer>
+</body>
 
 
 </html>
