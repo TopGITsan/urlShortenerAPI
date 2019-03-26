@@ -8,22 +8,25 @@
 	},
 	"dependencies": {
 		"express": "^5.0.0-alpha.2",
-		"mongodb": "^2.2.5",
-		"mongoose": "^4.5.7",
+		"mongodb": "^3.2.2",
+		"mongoose": "^5.0.0",
 		"cors": "^2.8.1",
-		"body-parser": "^1.15.2"
+		"body-parser": "^1.18.2"
 	},
 	"engines": {
 		"node": "4.4.5"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://hyperdev.com/#!/project/welcome-project"
+		"url": "https://github.com/TopGITsan/urlShortenerAPI.git"
 	},
 	"keywords": [
 		"node",
 		"hyperdev",
-		"express"
+		"express",
+		"mongoDB",
+		"mongoose",
+		"url-shortener"
 	],
 	"license": "MIT"
 }
